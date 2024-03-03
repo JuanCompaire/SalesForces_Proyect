@@ -15,11 +15,23 @@
         sumando += buttonValue;
         component.set("v.Sumando", sumando);
     },  
+    solutionNumber : function(component,event,helper){
+        var item =  event.getParam("randomNumber")
+        component.set("v.Solucion",item)
+
+    },
     Suma : function(component, event,helper){
         var sumando = parseInt(component.get("v.Sumando")) || 0;
         var sumaTotal = component.get("v.SumaTotal") || 0;
         sumaTotal += sumando;
         component.set("v.SumaTotal", sumaTotal);
-        component.set("v.Sumando", "");      
+        component.set("v.Sumando", "");    
+        if((component.get("v.NumOperacionesRestantes")) >0){
+            var numOpRes = parseInt(component.get("v.NumOperacionesRestantes"));
+            numOpRes--;
+            component.set("v.NumOperacionesRestantes",numOpRes)
+        }  
+        if((component.get("v.NumOperacionesRestantes")) ==0){
+        }
     }
 })
