@@ -20,7 +20,7 @@
     solutionNumber : function(component,event,helper){
         console.log("llegaron los niñós")
         var solucion = component.get("v.Solucion");
-        var item = event.getParam("number");
+        var item = event.getParam("randomNumber");
         component.set("v.Solucion",item)
         
 
@@ -37,6 +37,12 @@
             component.set("v.NumOperacionesRestantes",numOpRes)
         }  
         if((component.get("v.NumOperacionesRestantes")) ==0){
+            if("v.SumaTotal" == "v.Solucion"){
+                console.log("Has ganado")
+            }
+            else{
+                console.log("Perdisté")
+            }
         }
     }
 })
