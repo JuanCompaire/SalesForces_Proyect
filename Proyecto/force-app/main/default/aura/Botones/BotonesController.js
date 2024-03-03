@@ -4,6 +4,7 @@
         var randomNumber = Math.floor(Math.random() * 4) + 2;
         component.set("v.NumOperacionesRestantes", randomNumber)
         component.set("v.SumaTotal",0)
+        
 
     },
 
@@ -15,9 +16,13 @@
         sumando += buttonValue;
         component.set("v.Sumando", sumando);
     },  
+    
     solutionNumber : function(component,event,helper){
-        var item =  event.getParam("randomNumber")
+        console.log("llegaron los niñós")
+        var solucion = component.get("v.Solucion");
+        var item = event.getParam("number");
         component.set("v.Solucion",item)
+        
 
     },
     Suma : function(component, event,helper){
