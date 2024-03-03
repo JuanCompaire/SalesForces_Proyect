@@ -3,7 +3,7 @@
 
     },
     doInit : function(component, event, helper) {
-        var randomNumber = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio entre 1 y 100
+        var randomNumber = Math.floor(Math.random() * 1000) + 1; 
         component.set("v.randomNumber", randomNumber);
     }
 })
