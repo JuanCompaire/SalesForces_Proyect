@@ -1,3 +1,0 @@
-<aura:event type="APPLICATION" description="Description of the event">
-    <aura:attribute name="number" type="String"/>
-</aura:event>

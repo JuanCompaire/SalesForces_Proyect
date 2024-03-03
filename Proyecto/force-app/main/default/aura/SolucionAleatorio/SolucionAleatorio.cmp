@@ -6,4 +6,4 @@
     <div>
         <p>Numero Aleatorio: {!v.randomNumber}</p>
     </div>
-</aura:component>
+</aura:component>	

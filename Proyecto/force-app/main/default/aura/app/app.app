@@ -1,7 +1,5 @@
 <aura:application>
-    <c:numeroAleatorio/>
-    <c:NumberButtons/>
-    <c:NumberSpaces/>
-
-
+    <c:SolucionAleatorio/>
+    <c:Botones/>
+   
 </aura:application>	

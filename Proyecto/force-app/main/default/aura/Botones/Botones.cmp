@@ -1,0 +1,21 @@
+<aura:component>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="buttonValues" type="List" default="['0','1','2','3','4','5','6','7','8','9']" />
+    <aura:iteration items="{!v.buttonValues}" var="buttonValue">
+        <lightning:button label="{!buttonValue}" onclick="{!c.handleButtonClick}"/>
+    </aura:iteration>
+    <lightning:button label="+" onclick="{!c.Suma}"/>
+    <aura:attribute name="Sumando" type="String"/>
+    <div>
+        <p> {!v.Sumando}</p>
+    </div>
+    <aura:attribute name="SumaTotal" type="Integer"/>
+    <div>
+        <p>Total:  {!v.SumaTotal}</p>
+
+    </div>
+    <aura:attribute name="NumOperacionesRestantes" type="Integer"/>
+    <div>
+        <p>Operaciones restantes: {!v.NumOperacionesRestantes}</p>
+    </div>
+</aura:component>	

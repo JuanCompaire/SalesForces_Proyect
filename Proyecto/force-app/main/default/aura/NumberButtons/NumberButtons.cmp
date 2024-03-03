@@ -1,7 +1,0 @@
-<aura:component >
-    <aura:attribute name="buttonValues" type="List" default="['0','1','2','3','4','5','6','7','8','9','+']" />
-    <aura:registerEvent name="numberButtonClick" type="c:NumberButtonClick"/>
-    <aura:iteration items="{!v.buttonValues}" var="buttonValue">
-        <lightning:button label="{!buttonValue}" onclick="{!c.handleButtonClick}"/>
-    </aura:iteration>
-</aura:component>
